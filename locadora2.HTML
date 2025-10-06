@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Top 20 Filmes - A Locadora Pessoal</title>
+    <link rel="stylesheet" href="Style1.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="logo">
+            <h1>A Locadora do Top 20</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Saiba Mais</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#share">Compartilhar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="main-container">
+
+        <aside id="sidebar">
+            <h2>Lista de Filmes</h2>
+            <nav class="movie-list-nav">
+                <ol>
+                    <li><a href="#filme1">1. O Poderoso Chefão (1972)</a></li>
+                    <li><a href="#filme2">2. Um Sonho de Liberdade (1994)</a></li>
+                    <li><a href="#filme3">3. Interestelar (2014)</a></li>
+                    <li><a href="#filme4">4. Forrest Gump (1994)</a></li>
+                    <li><a href="#filme5">5. Os Vingadores: Ultimato (2019)</a></li>
+                    <li><a href="#filme6">6. Batman: O Cavaleiro das Trevas (2008)</a></li>
+                    <li><a href="#filme7">7. Coringa (2019)</a></li>
+                    <li><a href="#filme8">8. Avatar (2009)</a></li>
+                    <li><a href="#filme9">9. John Wick 4 (2023)</a></li>
+                    <li><a href="#filme10">10. Até o Último Homem (2016)</a></li>
+                    <li><a href="#filme11">11. O Senhor dos Anéis: O Retorno do Rei (2003)</a></li>
+                    <li><a href="#filme12">12. +Velozes +Furiosos (2003)</a></li>
+                    <li><a href="#filme13">13. Velozes e Furiosos: Desafio em Tóquio (2006)</a></li>
+                    <li><a href="#filme14">14. Velozes e Furiosos 4 (2009)</a></li>
+                    <li><a href="#filme15">15. Velozes e Furiosos 5: Operação Rio (2011)</a></li>
+                    <li><a href="#filme16">16. A Ilha do Medo (2010)</a></li>
+                    <li><a href="#filme17">17. Oppenheimer (2023)</a></li>
+                    <li><a href="#filme18">18. O Jogo da Imitação (2014)</a></li>
+                    <li><a href="#filme19">19. Top Gun: Maverick (2022)</a></li>
+                    <li><a href="#filme20">20. Duna: Parte Dois (2024)</a></li>
+                </ol>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+            <h2>O Meu Ranking Pessoal: A Locadora de Filmes Favoritos</h2>
+            <p>Role para ver os 20 filmes e clique nas opções "Emprestar", "Vender" ou "Assistir Trailer".</p>
+
+            <!-- ======= MODELO DE FILME ======= -->
+            <section class="movie-ranking" id="filme1">
+                <div class="ranking-header">
+                    <h3>#1: O Poderoso Chefão (1972)</h3>
+                    <span class="rank-number">1º Lugar</span>
+                </div>
+                <p>Um clássico absoluto sobre poder, lealdade e família.</p>
+                <img src="posters/O Poderoso Chefão (1972).jpg" alt="Poster do Poderoso Chefão" class="movie-poster">
+
+                <div class="locadora-actions">
+                    <button class="action-btn emprestar-btn" onclick="simularLocacao('filme1', 'Emprestar')">Emprestar (R$ 5,00)</button>
+                    <button class="action-btn vender-btn" onclick="simularLocacao('filme1', 'Vender')">Vender (R$ 30,00)</button>
+                    <a href="https://www.youtube.com/watch?v=sY1S34973zA" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                    <p class="status-locacao" id="status-filme1">Disponível para locação.</p>
+                </div>
+            </section>
+
+            <!-- ======= A PARTIR DAQUI: TODOS OS FILMES ======= -->
+            <section class="movie-ranking" id="filme2">
+                <h3>#2: Um Sonho de Liberdade (1994)</h3>
+                <p>Uma história poderosa de esperança e superação dentro da prisão.</p>
+                <img src="posters/Um Sonho de Liberdade (1994).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=6hB3S9bIaco" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme3">
+                <h3>#3: Interestelar (2014)</h3>
+                <p>Uma jornada épica pelo espaço e pelo amor que atravessa o tempo.</p>
+                <img src="posters/Interestelar (2014).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=zSWdZVtXT7E" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme4">
+                <h3>#4: Forrest Gump (1994)</h3>
+                <p>Um homem simples que vive momentos extraordinários da história.</p>
+                <img src="posters/Forrest Gump (1994).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=bLvqoHBptjg" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme5">
+                <h3>#5: Os Vingadores: Ultimato (2019)</h3>
+                <p>O encerramento épico da saga dos heróis da Marvel.</p>
+                <img src="posters/Os Vingadores Ultimato (2019).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme6">
+                <h3>#6: Batman: O Cavaleiro das Trevas (2008)</h3>
+                <p>O Coringa redefine o caos e eleva o cinema de super-heróis.</p>
+                <img src="posters/Batman O Cavaleiro das Trevas (2008).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=EXeTwQWrcwY" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme7">
+                <h3>#7: Coringa (2019)</h3>
+                <p>Um mergulho sombrio na mente de um homem esquecido pela sociedade.</p>
+                <img src="posters/Coringa (2019).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=zAGVQLHvwOY" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme8">
+                <h3>#8: Avatar (2009)</h3>
+                <p>Uma experiência visual revolucionária em Pandora.</p>
+                <img src="posters/Avatar (2009).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme9">
+                <h3>#9: John Wick 4 (2023)</h3>
+                <p>Ação intensa e coreografada com precisão impressionante.</p>
+                <img src="posters/John Wick 4.jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=qEVUtrk8_B4" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme10">
+                <h3>#10: Até o Último Homem (2016)</h3>
+                <p>Baseado em fatos reais, mostra coragem e fé em meio à guerra.</p>
+                <img src="posters/Até o Último Homem (2016).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=s2-1hz1juBI" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme11">
+                <h3>#11: O Senhor dos Anéis: O Retorno do Rei (2003)</h3>
+                <p>A batalha final pela Terra-média, pura emoção e heroísmo.</p>
+                <img src="posters/O Senhor dos Anéis O Retorno do Rei (2003).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=r5X-hFf6Bwo" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme12">
+                <h3>#12: +Velozes +Furiosos (2003)</h3>
+                <p>Carros, velocidade e muita atitude nas ruas de Miami.</p>
+                <img src="posters/+Velozes +Furiosos (2003).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=F_VIM03DXWI" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme13">
+                <h3>#13: Velozes e Furiosos: Desafio em Tóquio (2006)</h3>
+                <p>Corridas e drift em alto estilo pelas ruas de Tóquio.</p>
+                <img src="posters/Velozes e Furiosos Desafio em Tóquio (2006).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=p8HQ2JLlc4E" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme14">
+                <h3>#14: Velozes e Furiosos 4 (2009)</h3>
+                <p>O retorno de Dominic Toretto e Brian em alta velocidade.</p>
+                <img src="posters/Velozes e Furiosos 4 (2009).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=YZGVy-gWkN8" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme15">
+                <h3>#15: Velozes e Furiosos 5: Operação Rio (2011)</h3>
+                <p>Ação explosiva no Brasil, com Toretto e Brian enfrentando o sistema.</p>
+                <img src="posters/Velozes e Furiosos 5 Operação Rio (2011).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=N0zHRxEysL0" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme16">
+                <h3>#16: A Ilha do Medo (2010)</h3>
+                <p>Suspense psicológico intenso e um final de arrepiar.</p>
+                <img src="posters/A Ilha do Medo.jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=5iaYLCiq5RM" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme17">
+                <h3>#17: Oppenheimer (2023)</h3>
+                <p>A mente por trás da bomba atômica em um drama poderoso.</p>
+                <img src="posters/Oppenheimer (2023).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=uYPbbksJxIg" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme18">
+                <h3>#18: O Jogo da Imitação (2014)</h3>
+                <p>A genialidade de Alan Turing e o nascimento da computação moderna.</p>
+                <img src="posters/O Jogo da Imitação.jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=S5CjKEFb-sM" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme19">
+                <h3>#19: Top Gun: Maverick (2022)</h3>
+                <p>Velocidade, nostalgia e superação em um dos maiores sucessos do cinema moderno.</p>
+                <img src="posters/Top Gun Maverick.jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=giXco2jaZ_4" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <section class="movie-ranking" id="filme20">
+                <h3>#20: Duna: Parte Dois (2024)</h3>
+                <p>Um épico visual e político que redefine a ficção científica moderna.</p>
+                <img src="posters/Duna Parte Dois (2024).jpg" class="movie-poster">
+                <div class="locadora-actions">
+                    <a href="https://www.youtube.com/watch?v=U2Qp5pL3ovA" target="_blank" class="action-btn trailer-btn">🎬 Assistir Trailer</a>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>&copy; 2025 Ranking Pessoal de Filmes. Todos os direitos reservados.</p>
+            </footer>
+
+            <script src="locadora.js"></script>
+        </main>
+    </div>
+
+</body>
+</html>
